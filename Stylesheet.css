@@ -1,0 +1,220 @@
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; 
+    background-image:url(background7.avif);
+    background-size:contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:1400px 1000px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #000000;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.cart-button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    color:rgb(55, 0, 128);
+    font-size:large;
+    background-color:#fbff00;
+}
+.cart-button:hover{
+    cursor: pointer;
+}
+
+.login-link{
+    font-size: 23px;
+    font-weight:bold;
+    padding: 20px 20px;
+    border:3px solid #000000;
+    border-radius:20px;
+    color:#8c00ff;
+    background-color: #ffffff;
+    
+}
+
+nav{
+    display: flex;
+    border-bottom: 2px solid #000000;
+    background-color:#000;
+    
+}
+
+nav a{
+    flex: 1;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    border-right: 1px solid #000000;
+    font-weight: bold;
+    font-size:22px;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    color:purple;
+    text-shadow: 0 0 10px purple, 0 0 24px purple;
+}
+
+nav a:last-child { border-right: none; }
+
+Main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 30px;
+}
+.Products {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 50px 100px;
+    gap:200px;
+    justify-content: center;
+}
+
+.Product-card {
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    width:250px;
+    border:6px double #000000;
+}
+
+.Product-image {
+    
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-price {
+    
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+    color:#000000;
+    background-color:#ffffffff;
+}
+
+.Add-to-Cart {
+    
+    width: 100%;
+    padding: 22px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(255, 204, 0, 0.9);
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    padding: 22px;
+}
+
+footer a{
+    font size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    color:purple;
+    padding:22px;
+    margin-top:-80px;
+    transition: text-shadow 0.04s ease, color 0.04s ease; 
+}
+
+footer a:hover {
+    color:orangered;
+    text-shadow: 0 0 10px purple, 0 0 18px purple;
+}
+
+.text-bar input {
+    width: 100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:18px;
+    text-align:center;
+}
+.login-button {
+    width:100%;
+    padding:14px;
+    background-color:rgb(0, 97, 182);
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.login-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    margin:0;
+}
+.big-box{
+    width: 600px;
+    max-width: 100%;
+    padding:100px;
+    background-color: #effcff;
+    border-radius: 4px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:50px;
+}
+.logo img{
+    height: 100px;
+    width:200px;
+    display:block;
+}
+.logo{
+    position:relative;
+    display:inline block;
+}
+.logo-text {
+    position: absolute;
+    top:10%;
+    font-weight: bold;
+    font-size:30px;
+    font-family:monospace;
+    color:#4401df;
+    text-decoration: underline;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+@keyframes glow-loop {
+    0% {text-shadow:0 0 10px #fbff00;}
+    50%{text-shadow:0 0 60px#fbff00;}
+    100%{text-shadow:0 0 10px#fbff00;}
+}
+.glow-title {
+    color:white;
+    animation:glow-loop 2s ease-in-out infinite;
+}
