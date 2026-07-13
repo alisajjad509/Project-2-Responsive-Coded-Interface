@@ -11,3 +11,6 @@ Their high contrast colors on certain elements make important buttons and links 
  Technologies used: HTML CSS 
  Credits: Youtube Channel BroCode
  Future Improvements: Fully functional cart button and add to cart buttons applied in Javascript to total the amount of items selected and display how many items are currently in cart. 
+
+
+I RENAMED MY MAIN FILE FROM FLASHBRIGHT.HTML TO INDEX.HTML
